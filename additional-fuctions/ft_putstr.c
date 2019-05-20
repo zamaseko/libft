@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 11:50:45 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/20 13:16:36 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/05/20 16:44:07 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,16 @@
 
 void	ft_putstr(char const *s)
 {
+	int i;
 
-	while(s != '\0')
-		ft_putstr();
+	i = 0;
+
+	while(s[i] != '\0')
+		ft_putstr(s[i]);
+		i++;
+}
+
+void	ft_putstr(char const *s)
+{
+	
 }
