@@ -6,14 +6,16 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 15:46:44 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/21 15:47:27 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/05/23 12:08:50 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <libft.h>
 
 int	ft_toupper(int z)
 {
 	if ((97 <= z) && (123 >= z))
 		return (z - 32);
-	else 
-		return (z);	
+	else
+		return (z);
 }

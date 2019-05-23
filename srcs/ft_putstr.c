@@ -6,17 +6,32 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 16:43:58 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/21 17:23:54 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/05/23 12:57:43 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
+
 void	ft_putstr(char const *s)
 {
-	z = 0;
+	int z;
 
-	while(str[z] != '\0')
+	z = 0;
+	while (s[z] != '\0')
 	{
-		write(1, &str[z], 1);
+		write(1, &s[z], 1);
 		z++;
 	}
 }
+
+void	ft_putstr(char const *s)
+{
+	int i;
+
+	i = 0;
+
+	while(s[i] != '\0')
+		ft_putstr(s[i]);
+		i++;
+}
+
