@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 15:43:01 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/27 16:52:49 by zamaseko         ###   ########.fr       */
+/*   Created: 2019/05/27 16:04:48 by zamaseko          #+#    #+#             */
+/*   Updated: 2019/05/27 16:06:50 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "libft.h"
 
-void	ft_putchar(char c)
+char	*ft_strcat(char *restrict s1, const char *restrict s2)
 {
-	write(1, &c, 1);
+	return ();
 }
+

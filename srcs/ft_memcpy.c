@@ -1,18 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 15:43:01 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/27 16:52:49 by zamaseko         ###   ########.fr       */
+/*   Created: 2019/05/27 15:47:24 by zamaseko          #+#    #+#             */
+/*   Updated: 2019/05/27 15:48:47 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+voi	ft_memcpy(void *restrict, const void *restrict src, size_t n)
 {
-	write(1, &c, 1);
 }

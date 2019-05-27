@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 15:43:01 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/27 16:52:49 by zamaseko         ###   ########.fr       */
+/*   Created: 2019/05/27 16:16:30 by zamaseko          #+#    #+#             */
+/*   Updated: 2019/05/27 16:17:20 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+char	*ft_strstr(const char *haystack, const char *needle, locale_t loc)
 {
-	write(1, &c, 1);
 }
+
