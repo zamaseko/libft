@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:57:02 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/27 15:58:35 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/05/28 18:04:37 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,4 +14,11 @@
 
 char	ft_strdup(const char *s1)
 {
+	char *i;
+	int j;
+
+	i = 0;
+
+	(!(w = (char *)(malloc (sizeof(char) * (strlen(s1) +1))))
+	return (NULL);
 }

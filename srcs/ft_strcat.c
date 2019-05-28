@@ -6,15 +6,27 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:04:48 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/27 16:06:50 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/05/28 14:05:36 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include "libft.h"
-
 char	*ft_strcat(char *restrict s1, const char *restrict s2)
 {
-	return ();
+	int a;
+	int b;
+
+	a = 0;
+	while (s1[a] != '\0')
+		a++;
+	b = 0;
+	while (s2[b] != '\0')
+	{
+		s1[a] = s2[b];
+		a++;
+		b++;
+	}
+	s1[a] = '\0';
+	return (s1);
 }
 
