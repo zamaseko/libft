@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:04:48 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/28 14:05:36 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/05/30 14:36:22 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,7 @@ char	*ft_strcat(char *restrict s1, const char *restrict s2)
 	}
 	s1[a] = '\0';
 	return (s1);
+//
+//	return(strncat(s1, s2, strlen(2))
 }
 
