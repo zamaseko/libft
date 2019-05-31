@@ -1,37 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 17:26:44 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/31 10:27:50 by zamaseko         ###   ########.fr       */
+/*   Created: 2019/05/27 16:54:56 by zamaseko          #+#    #+#             */
+/*   Updated: 2019/05/31 14:14:52 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <libft.h>
-#include <ctype.h>
+#include "libft.h"
 
-int	ft_isalpha(int c)
+void	ft_putchar_fd(char c, int fd)
 {
-		if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
-		return (1);
-	else
-		return (0);
-}
-
-#include <stdio.h>
-
-int		main(void)
-{
-	int k;
-	int c;
-
-	c = 'A';
-	k = ft_isalpha(c);
-	printf("mine: %d\n", k);
-	k = isalpha(c);
-	printf("pc: %d\n", k);
-	return (0);
+	write(fd, &c, 1);
 }

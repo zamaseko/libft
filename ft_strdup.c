@@ -1,37 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 17:26:44 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/31 10:27:50 by zamaseko         ###   ########.fr       */
+/*   Created: 2019/05/27 15:57:02 by zamaseko          #+#    #+#             */
+/*   Updated: 2019/05/31 14:40:13 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <libft.h>
-#include <ctype.h>
+#include "libft.h"
 
-int	ft_isalpha(int c)
+char	*ft_strdup(const char *s)
 {
-		if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
-		return (1);
-	else
-		return (0);
+	char *dup;
+	char *str;
+
+	if (! s || !(dup = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1))))
+		return (NULL);
+	str = ft_strcpy(dup, s);
+	return (str);
 }
 
-#include <stdio.h>
-
-int		main(void)
+int main(void)
 {
-	int k;
-	int c;
-
-	c = 'A';
-	k = ft_isalpha(c);
-	printf("mine: %d\n", k);
-	k = isalpha(c);
-	printf("pc: %d\n", k);
+	char *l;
+	const char *m;
+	
+	m = "zandile";
+	l = ft_strdup(m);
+	ft_putendl(l);
 	return (0);
 }
+  

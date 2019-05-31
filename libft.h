@@ -6,16 +6,16 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:47:28 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/31 08:32:10 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/05/31 15:52:45 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-#define LIBFT_H  
-#include <unistd.h>
-#include <string.h>
-#include <ctype.h> 
-#include <stdlib.h>
+# define LIBFT_H  
+# include <unistd.h>
+# include <string.h>
+# include <ctype.h> 
+# include <stdlib.h>
 
 //int	ft_atoi(const char *str);
 //void	ft_bzero(void *s, size_t n);
@@ -35,18 +35,18 @@ int	ft_isalpha(int c);
 //void 	ft_memdel(void **ap);				
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
-//void	ft_putendl(char const *s);
-void	ft_putnbr(int n);
-//void	ft_putchar_fd(char c, int fd);
-//void	ft_putstr_fd(char const *s, int fd);
+void	ft_putendl(char const *s);
+//void	ft_putnbr(int n);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char const *s, int fd);
 //void	ft_putendl_fd(char const *s, int fd);
 //void	ft_putnbr_fd(int n, int fd);
-size_t	ft_strlen(const char *s, size_t n);
-char	*ft_strdup(const char *s1)
+size_t	ft_strlen(const char *s);
+//char	*ft_strdup(const char *s1)
 char	*ft_strcpy(char *dst, const char *src);
 //char	*ft_strncpy(char *dst,const char *src, size_t len);
 //char	*ft_strcat(char *restrict s1, const char *restrict s2);
-char	*ft_strncat(char *restrict s1, cont char *restrict s2, size_t n);
+char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
 //size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize);
 //char	*ft_strchr(const char *s, int c);
 //char	*ft_strrchr(const char *s, int c);

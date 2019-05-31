@@ -1,37 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 17:26:44 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/31 10:27:50 by zamaseko         ###   ########.fr       */
+/*   Created: 2019/05/27 15:56:29 by zamaseko          #+#    #+#             */
+/*   Updated: 2019/05/31 14:35:02 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <libft.h>
-#include <ctype.h>
+#include <string.h>
 
-int	ft_isalpha(int c)
+size_t	ft_strlen(const char *s)
 {
-		if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
-		return (1);
-	else
-		return (0);
+	int count;
+
+	count = 0;
+	while (s[count] != '\0')
+		count = count + 1;
+	return (count);
 }
 
-#include <stdio.h>
-
-int		main(void)
+/*#include <stdio.h>
+int main(void)
 {
-	int k;
-	int c;
+	size_t n;
+	const char *l;
 
-	c = 'A';
-	k = ft_isalpha(c);
-	printf("mine: %d\n", k);
-	k = isalpha(c);
-	printf("pc: %d\n", k);
+	l = "zandile maseko";
+	n = ft_strlen(l);
+	printf("mine: %zu\n", n);
+	n = strlen(l);
+	printf("pc: %zu\n", n);
 	return (0);
 }
+*/

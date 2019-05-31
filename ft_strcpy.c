@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:58:50 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/31 10:03:15 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/05/31 14:38:55 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strcpy(char *dst, const char *src)
 	dst[i] = '\0';
 	return (dst);
 }
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
 
 int	main(void)
@@ -40,5 +40,5 @@ int	main(void)
 	k = ft_strcpy(l, NULL);
 	printf("%s\n", k);
 	return (0);
-}
+}*/
 

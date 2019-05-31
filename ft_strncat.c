@@ -6,11 +6,11 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:06:59 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/31 10:51:50 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/05/31 14:08:57 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
 {
@@ -31,19 +31,22 @@ char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
 	return (s1);
 }
 
-#include <stdio.h>
 
 int main(void)
 {
 	char *k;
 	char l[90] = "Zandile";
-//	char x[90] = "Zandile";
+	char x[90] = "Zandile";
 	const char m[50] = "Maseko";
 	size_t n;
 
 	n = 6;
 	k = ft_strncat(l, m, n);
-	printf("mine: %s\n", k);
+	ft_putstr("mine: ");
+	ft_putstr(k);
+	ft_putchar('\n');
 	k = strncat(x, m, n);
-	printf("pc: %s\n", k);
+	ft_putstr("pc: ");
+	ft_putstr(k);
+	return (0);
 }
