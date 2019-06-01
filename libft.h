@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:47:28 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/31 15:52:45 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/01 16:16:37 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <ctype.h> 
 # include <stdlib.h>
 
-//int	ft_atoi(const char *str);
+int	ft_atoi(const char *str);
 //void	ft_bzero(void *s, size_t n);
 int	ft_isalpha(int c);
 //int	ft_isdigit(int c);
@@ -36,7 +36,7 @@ int	ft_isalpha(int c);
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
 void	ft_putendl(char const *s);
-//void	ft_putnbr(int n);
+void	ft_putnbr(int n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 //void	ft_putendl_fd(char const *s, int fd);
