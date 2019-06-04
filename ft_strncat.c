@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:06:59 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/31 14:08:57 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/04 13:17:37 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
 }
 
 
-int main(void)
+/*int main(void)
 {
 	char *k;
 	char l[90] = "Zandile";
@@ -49,4 +49,4 @@ int main(void)
 	ft_putstr("pc: ");
 	ft_putstr(k);
 	return (0);
-}
+}*/
