@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:47:28 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/04 16:07:30 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/04 18:34:17 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
 //char	*ft_strrchr(const char *s, int c);
 //char	*ft_strstr(const char *haystack, const char *needle);
 //char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-//int	ft_strcmp(const char *s1, const char *s2);
+int	ft_strcmp(const char *s1, const char *s2);
 //int	ft_strncmp(const char *s1, const char *s2, size_t ); 
 //char	*ft_strnew(size_t size);
 //void	ft_strdel(char **as);
