@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 15:46:44 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/01 17:01:15 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/04 17:19:54 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int	ft_toupper(int z)
 {
-	if ((96 <= z) && (122 >= z))
+	if (96 < z && 122 > z)
 		return (z - 32);
 	else
 		return (z);
 }
-
-/*int main(void)
+/*
+int main(void)
 {
 	int a;
 	int b;
