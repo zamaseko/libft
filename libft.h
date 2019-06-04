@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:47:28 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/01 16:16:37 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/04 16:07:30 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
 int	ft_atoi(const char *str);
 //void	ft_bzero(void *s, size_t n);
 int	ft_isalpha(int c);
-//int	ft_isdigit(int c);
-//int	ft_isalnum(int c);
-//int	ft_isascii(int c);
+int	ft_isdigit(int c);
+int	ft_isalnum(int c);
+int	ft_isascii(int c);
 //int	ft_isprint(int c);
 //char	*ft_itoa(int n);
 //void	*ft_memset(void *b, int c, size_t);
@@ -40,9 +40,9 @@ void	ft_putnbr(int n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 //void	ft_putendl_fd(char const *s, int fd);
-//void	ft_putnbr_fd(int n, int fd);
+void	ft_putnbr_fd(int n, int fd);
 size_t	ft_strlen(const char *s);
-//char	*ft_strdup(const char *s1)
+char	*ft_strdup(const char *s1);
 char	*ft_strcpy(char *dst, const char *src);
 //char	*ft_strncpy(char *dst,const char *src, size_t len);
 //char	*ft_strcat(char *restrict s1, const char *restrict s2);
