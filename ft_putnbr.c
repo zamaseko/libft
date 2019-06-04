@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 17:25:09 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/01 15:32:27 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/04 13:16:43 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	ft_putnbr(int n)
 		ft_putchar(n + 48);
 	}
 }
-int main(void)
+/*int main(void)
 {
 	int i;
 
@@ -43,4 +43,4 @@ int main(void)
 	ft_putnbr(i);
 	ft_putchar('\n');
 	return (0);
-}
+}*/
