@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:22:46 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/04 15:50:28 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/05 16:00:24 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,36 @@
 
 int	ft_isalnum(int c)
 {
-	if (ft_isdigit(c) || ft_isalpha(0))
+	int a;
+	int b;
+
+	a = ft_isalpha(c);
+	b = ft_isdigit(c);
+	if ( a || b)
+		return (1);
+	else 
+		return (0);
+}	
+	
+	/*{
+	if (ft_isdigit(c) || ft_isalpha(c))
 		return (1);
 	else
 		return (0);
-}
+}*/
 
-/*
-#include <stdio.h>
+
+/*#include <stdio.h>
 int main(void) 
 {
 	int a;
 	int b;
 
-	a = 'A';
+	a = '~';
 	b = ft_isalnum(a);
-	printf("%d\n", b);§
+	printf("mine: %d\n", b);
+	b = isalnum(a);
+	printf("pc: %d\n", b);
+//	ft_putchar(b);
 	return (0);
 }*/
