@@ -6,20 +6,17 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:58:50 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/05 14:09:12 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/05 18:12:35 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-/* this is to print out a copy of the initial string he is given. the return is the dst where the string is copied*/
 char	*ft_strcpy(char *dst, const char *src)
 {
 	int i;
 
 	i = 0;
-	if (dst == NULL || src == NULL)
-		return (NULL);
 	while (src[i])
 	{
 		dst[i] = src[i];
@@ -28,7 +25,9 @@ char	*ft_strcpy(char *dst, const char *src)
 	dst[i] = '\0';
 	return (dst);
 }
-/*#include <stdio.h>
+
+/*
+#include <stdio.h>
 #include <stdlib.h>
 
 int	main(void)
@@ -40,5 +39,6 @@ int	main(void)
 	k = ft_strcpy(l, NULL);
 	printf("%s\n", k);
 	return (0);
-}*/
+}
+*/
 
