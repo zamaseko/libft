@@ -12,23 +12,64 @@
 
 #include "libft.h"
 
-char	*ft_strstr(const char *haystack, const char *needle)
+char	*ft_strstr(const char *str, const char *str2)
 {
 	int i;
 	int j;
 
 	i = 0;
-	if (haystack[i] == '\0' &&  needle[i] == '\0')
-	return ((char *)haystack)
-	
-	j = 0;
-	if (needle[i] != '\0')
-	{
-		if (needle[j] != '\0' && haystack[i] == needle[i])
-			j++;
-		if (needle[i] == '\0')
-			i++;
-		return ((char *)haystack)
-	}
-	return(NULL);
+	if (str[i] == '\0')
+		return ((char *)str);
+		j = 0;
+		while (str[i] != '\0')
+			while (str2[j] && str[i + j] == str2[j])
+			{
+				if (str2[j] != '\0')
+					j++;
+					{
+						return ((char *)str + j);
+					}
+					i++;
+			}
+			return (NULL);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*{
+	int i;
+	int j;
+	i = 0;
+	if (str[i] == '\0' && str2[i] == '\0')
+		return ((char *)str);
+		while (str[i] != '\0')
+		{
+			j = 0;
+			while (str2[j] != '\0' &&  str[j + i] == str2[j])		
+				j++;
+				if (str2[j] != '\0')
+					return ((char *)str + j);
+			i++;
+		}
+		return(NULL);
+}
+*/
+
+
