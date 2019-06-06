@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <unistd.h>
+//#include <stdlib.h>
 
 int	ft_atoi(const char *str)
 {
@@ -23,7 +25,7 @@ int	ft_atoi(const char *str)
 	res = 0;
 
 	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\r' || str[i] == '\f'||
-			str[i] == '\n')
+			str[i] == '\n' || str[i] == '\v')
 	i++;
 	if (str[i] == '-')
 	 {
@@ -32,7 +34,7 @@ int	ft_atoi(const char *str)
 	 }
 	else if (str[i] == '+')
 		i++;
-	while (str[i] >= '0' && str[i] <= '9')
+	while (str[i] != '\0' && (str[i] >= '0' && str[i] <= '9'))
 	{
 	 res = ((res * 10) + (str[i] - '0'));
 		 i++;
@@ -40,14 +42,19 @@ int	ft_atoi(const char *str)
 	return (res * change);
 }
 
+#include <stdio.h>
+
 /*int main(void)
 {
 	int i;
-	const char a[50] = "1223";
+	const char *a;
 
 	a = "1223";
 	i = ft_atoi(a);
-	ft_putchar(i);
-	ft_putchar('\n');
+	printf("mine: %d\n", i);
+	i = atoi(a);
+	printf("pc: %d\n", i);
+//	ft_putstr(i);
+//	ft_putchar('\n');
 	return (0);
 }*/
