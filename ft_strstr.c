@@ -13,63 +13,49 @@
 #include "libft.h"
 
 char	*ft_strstr(const char *str, const char *str2)
+/*
 {
 	int i;
 	int j;
 
 	i = 0;
-	if (str[i] == '\0')
+	if (str2[0] == '\0')
 		return ((char *)str);
-		j = 0;
-		while (str[i] != '\0')
-			while (str2[j] && str[i + j] == str2[j])
-			{
-				if (str2[j] != '\0')
-					j++;
-					{
-						return ((char *)str + j);
-					}
-					i++;
-			}
-			return (NULL);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*{
-	int i;
-	int j;
-	i = 0;
-	if (str[i] == '\0' && str2[i] == '\0')
-		return ((char *)str);
-		while (str[i] != '\0')
+	if (str[0] == '\0')
+		return (NULL);
+	j = 0;
+	while (str[i])
+	{
+		while (str2[j] == str[i + j])
 		{
-			j = 0;
-			while (str2[j] != '\0' &&  str[j + i] == str2[j])		
+			if (str[j] == '\0')
 				j++;
-				if (str2[j] != '\0')
-					return ((char *)str + j);
-			i++;
+				return ((char*)str + j);
 		}
-		return(NULL);
+		i++;
+	}
+	return (NULL);
 }
 */
+{
+	int i;
+	int j;
 
-
+	i = 0;
+	if (str2[0] == '\0')
+		return ((char*)str);
+	if (str[0] == '\0')
+		return (NULL);
+	j = 0;
+	while (str[i])
+		{
+			while (str2[j] == str[i + j])
+			{
+				if (str[j + 1] == '\0')
+					j++;
+					return ((char *)str + j);
+			}
+			i++;
+		}
+		return (NULL);
+}
