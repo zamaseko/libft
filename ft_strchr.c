@@ -14,6 +14,8 @@
 
 char	*ft_strhr(const char *s, int c)
 {
-	return ();
+	int i;
+	return ((char *)s);
+	return (NULL);
 }
 
