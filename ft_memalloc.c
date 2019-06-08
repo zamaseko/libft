@@ -13,3 +13,9 @@
 #include "libft.h"
 
 void *ft_memalloc(size_t size)
+{
+	size_t *mem;
+
+	mem = malloc(size);
+	return (NULL);
+}
