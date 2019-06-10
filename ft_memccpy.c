@@ -1,24 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 15:49:04 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/10 18:07:21 by zamaseko         ###   ########.fr       */
+/*   Created: 2019/06/10 16:46:19 by zamaseko          #+#    #+#             */
+/*   Updated: 2019/06/10 17:55:51 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n)
 {
-	char dest;
-	char source;
+	unsigned char *source;
+	unsigned char *dest;
 	size_t i;
-
+	
 	i = 0;
-	"
-	return (dst);
+	dest = (unsigned char *)dst;
+	source = (unsigned char *)src;
+	if (dest == NULL && source == NULL)
+		return (NULL);
+	while (n > i)
+	{
+		if (source[i] == (unsigned char)c)
+		{
+			dest[i] = source[i];
+			i++;
+			return (dest + i);
+		}
+		dest[i] = source[i];
+		i++;
+	}
+	return (NULL);
 }
+

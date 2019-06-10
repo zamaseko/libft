@@ -12,7 +12,29 @@
 
 #include "libft.h"
 
-char	*ft_strstr(const char *haystack, const char *needle, locale_t loc)
+char	*ft_strnstr(const char *str, const char *str2, size_t len)
 {
+	{
+	size_t i;
+	size_t j;
+
+	i = 0;
+	if (str2[0] == '\0')
+		return ((char*)str);
+	if (str[0] == '\0')
+		return (NULL);
+	j = 0;
+	while (str[i] && i < len)
+	{
+		while (str2[j] == str[i + j])
+		{
+			if (str[j] == '\0')
+				j++;
+				return ((char *)str + j);
+		}
+		i++;
+		}
+		return (NULL);
+}
 }
 

@@ -6,10 +6,20 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:38:08 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/27 16:38:56 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/10 16:59:22 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_striter(char *s, void (*f)(char *))
+{
+	unsigned int i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		f(&s[i]);
+		i++;
+	}
+}

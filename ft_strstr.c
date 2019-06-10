@@ -42,20 +42,20 @@ char	*ft_strstr(const char *str, const char *str2)
 	int j;
 
 	i = 0;
-	if (str2[0] == '\0')
+	if (str2[0] == '\0' && str2[0] == '\0')
 		return ((char*)str);
-	if (str[0] == '\0')
+		if (str2[0] == '\0')
 		return (NULL);
 	j = 0;
-	while (str[i])
+	while (str[i] != '\0')
+	{
+		while (str2[j] && str2[j] == str[i + j])
 		{
-			while (str2[j] == str[i + j])
-			{
-				if (str[j + 1] == '\0')
-					j++;
-					return ((char *)str + j);
-			}
-			i++;
+			if (str[j + 1] == '\0')
+					 j++;
+			return ((char *)str + i);
+		}
+		i++;
 		}
 		return (NULL);
 }

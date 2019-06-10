@@ -13,3 +13,15 @@
 #include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+{
+	unsigned int i;
+	int j;
+
+	i = 0;
+	if (s[i] != '\0')
+	{
+		j = 0;
+		f(&s[i], j);
+		i++;
+	}
+}
