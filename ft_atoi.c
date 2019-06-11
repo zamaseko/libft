@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:19:57 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/05 18:38:29 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/11 17:40:35 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 
 int	ft_atoi(const char *str)
 {
-	unsigned int i;
- 	unsigned int  change;
-	unsigned int res;
+	int i;
+ 	int  change;
+	long  res;
 
 	i = 0;
 	change = 1;
