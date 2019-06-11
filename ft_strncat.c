@@ -6,13 +6,13 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:06:59 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/04 13:17:37 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/11 18:30:05 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
+char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	size_t a;
 	size_t b;

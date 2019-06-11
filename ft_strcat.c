@@ -6,12 +6,13 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:04:48 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/05 13:52:23 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/11 18:33:37 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-char	*ft_strcat(char *restrict s1, const char *restrict s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	int a;
 	int b;
