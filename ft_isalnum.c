@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:22:46 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/05 16:00:24 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/13 12:13:52 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,11 @@ int	ft_isalnum(int c)
 
 	a = ft_isalpha(c);
 	b = ft_isdigit(c);
-	if ( a || b)
+	if (a || b)
 		return (1);
-	else 
+	else
 		return (0);
-}	
-	
-
+}
 /*#include <stdio.h>
 int main(void) 
 {
