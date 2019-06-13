@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:19:57 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/11 17:40:35 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/13 18:46:39 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,17 @@
 
 int	ft_atoi(const char *str)
 {
-	int i;
- 	int  change;
-	long  res;
+	unsigned int i;
+ 	long change;
+	long res;
 
 	i = 0;
 	change = 1;
 	res = 0;
 
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\r' || str[i] == '\f'||
-			str[i] == '\n' || str[i] == '\v')
-	i++;
+	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\r' || 
+		str[i] == '\f'|| str[i] == '\n' || str[i] == '\v')
+		i++;
 	if (str[i] == '-')
 	 {
 		 change = -1;
@@ -34,15 +34,19 @@ int	ft_atoi(const char *str)
 	 }
 	else if (str[i] == '+')
 		i++;
-	while (str[i] != '\0' && (str[i] >= '0' && str[i] <= '9'))
+	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
 	{
-	 res = ((res * 10) + (str[i] - '0'));
-		 i++;
+		res = (res * 10 + str[i] - '0');
+		i++;
+		if (res > 2447483647)
+			 return (0);
+		if (res < -2447483648)
+		return (-1);
 	}
 	return (res * change);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
 /*int main(void)
 {
