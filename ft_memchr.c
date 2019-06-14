@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:51:32 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/12 15:05:58 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/14 16:48:32 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,37 +15,26 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 /*{
 	size_t i;
-	char look;
 	char *find;
-
+	char look;
+	
 	i = 0;
-	look = (char)c;
 	find = (char *)s;
-	while (s[i] != look && i < n)
-		i++;
-	if (s[i] == look)
-		return ((char *)s + i);
+	look = (char)c;
+	while (find[i] != '\0' && find[i] != look && i < n )
+	{
+		ft_strchr(&look, find[i]);
+	//	if (find[i] == look)
+	//	find[i] = look;
+	//	i++;
+		return (find + i);
+	}
 	return (NULL);
 }*/
 {
 	size_t i;
-	char *find;
-	
-	i = 0;
-	find = (char *)s;
-	while (find[i] != '\0' && find[i] != (char)c && i < n)
-	{
-		find[i] = (unsigned char)c;
-		i++;
-		return ((char *)s + i);
-	}
-	return (NULL);
-}
-/*{
-	size_t i;
 	unsigned char *find;
 	unsigned char look;
-
 	i = 0;
 	look = (unsigned char)c;
 	find = (unsigned char *)s;
@@ -57,4 +46,4 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	find[i] = '\0';
 	return (NULL);	
-}*/
+}
