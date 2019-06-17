@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:49:04 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/14 17:18:41 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/17 12:31:07 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			i--;
 		if (dest[i] == source[i])
 		 	i++;
-		ft_memcpy(dest, source, len);
+		ft_memcpy(dst, src, len);
 	}
 	return ((char *)dst);
 }
