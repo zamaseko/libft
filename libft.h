@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:47:28 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/17 13:47:34 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/18 15:20:26 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int ft_strequ(const char *s1, char const *s2);
 int	ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t);
 char	*ft_strjoin(char const *s1, char const *s2);
-char	*ft_strtrim(char const *s);
+//char	*ft_strtrim(char const *s);
 //char	**ft_strsplit(char const *s, char c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);

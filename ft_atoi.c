@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:19:57 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/14 17:22:52 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/18 15:41:06 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ int	ft_atoi(const char *str)
 	{
 		res = (res * 10 + str[i] - '0');
 		i++;
-		if (res > 2447483647)
+		if (res > 2147483648 && change == -1)
 			 return (0);
-		if (res < -2447483648)
+		if (res < -2147483647 && change == 1)
 		return (-1);
 	}
 	return (res * change);

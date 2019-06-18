@@ -6,10 +6,20 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:51:21 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/27 16:52:03 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/18 17:05:11 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 char	*ft_itoa(int n)
+{
+	char *str;
+//	int i;
+//	int res;
+
+	str = (char *)malloc(sizeof(char) * n + 1); 
+	if (!str)
+		return (NULL);
+
+}
