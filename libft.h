@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:47:28 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/18 17:50:27 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/19 18:01:40 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_isdigit(int c);
 int	ft_isalnum(int c);
 int	ft_isascii(int c);
 int	ft_isprint(int c);
-char	*ft_itoa(int n);
+//char	*ft_itoa(int n);
 void	*ft_memset(void *b, int c, size_t);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n); 
@@ -47,7 +47,7 @@ char	*ft_strcpy(char *dst, const char *src);
 char	*ft_strncpy(char *dst,const char *src, size_t len);
 char	*ft_strcat(char *s1, const char *s2);
 char	*ft_strncat(char *s1, const char *s2, size_t n);
-//size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strstr(const char *haystack, const char *needle);
@@ -63,13 +63,13 @@ char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int ft_strequ(const char *s1, char const *s2);
 int	ft_strnequ(char const *s1, char const *s2, size_t n);
-char	*ft_strsub(char const *s, unsigned int start, size_t);
+char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
-//char	*ft_strtrim(char const *s);
+char	*ft_strtrim(char const *s);
 //char	**ft_strsplit(char const *s, char c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
-
+//char	ft_gap(char c);
 /*
 ADD FUNCTIONS
 t_list	*ft_lstnew

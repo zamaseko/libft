@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:47:21 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/17 11:54:33 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/19 14:43:23 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 		fstr[i] = s[start + i];
 		i++;
 	}
+	fstr[i] = '\0';
 	return (fstr);
 }
