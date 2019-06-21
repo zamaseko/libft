@@ -6,7 +6,7 @@
 #    By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/04 12:28:43 by zamaseko          #+#    #+#              #
-#    Updated: 2019/06/19 18:02:22 by zamaseko         ###   ########.fr        #
+#    Updated: 2019/06/21 10:14:01 by zamaseko         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,8 @@ SRCS = ft_putchar.c ft_putstr.c ft_tolower.c ft_toupper.c ft_strlen.c \
 	  ft_strchr.c ft_strnstr.c ft_striter.c ft_strmapi.c ft_memdel.c \
 	  ft_strdel.c ft_memccpy.c ft_strclr.c ft_striteri.c ft_strrchr.c \
 	  ft_strequ.c ft_strnequ.c ft_memcmp.c ft_memchr.c ft_strnew.c \
-	  ft_strjoin.c ft_memmove.c ft_strsub.c ft_strlcat.c ft_strtrim.c 
+	  ft_strjoin.c ft_memmove.c ft_strsub.c ft_strlcat.c ft_strtrim.c \
+	  ft_itoa.c  
 OBJS = *.o 
 
 all : $(NAME)

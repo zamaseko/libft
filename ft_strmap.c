@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:40:54 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/13 17:04:31 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/21 18:47:54 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,4 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	}
 	gstr[i] = '\0';
 	return (gstr);
-} 
+}

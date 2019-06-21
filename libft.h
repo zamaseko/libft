@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:47:28 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/19 18:01:40 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/21 10:14:24 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_isdigit(int c);
 int	ft_isalnum(int c);
 int	ft_isascii(int c);
 int	ft_isprint(int c);
-//char	*ft_itoa(int n);
+char	*ft_itoa(int n);
 void	*ft_memset(void *b, int c, size_t);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n); 

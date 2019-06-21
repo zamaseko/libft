@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:56:29 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/05 17:38:11 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/21 18:46:55 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,18 +21,3 @@ size_t	ft_strlen(const char *s)
 		count = count + 1;
 	return (count);
 }
-
-/*#include <stdio.h>
-int main(void)
-{
-	size_t n;
-	const char *l;
-
-	l = "zandile maseko";
-	n = ft_strlen(l);
-	printf("mine: %zu\n", n);
-	n = strlen(l);
-	printf("pc: %zu\n", n);
-	return (0);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 16:58:22 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/19 17:00:50 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/21 11:51:49 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int		main()
 {
 	char *a;
 
-	a = "   hello   ";
-	ft_putstr(ft_strtrim(a));
+	a = "   hello what is you name    ";
+	ft_substr(
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:11:03 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/05/27 16:12:10 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/21 18:26:35 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s + i);
 	return (NULL);
 }
-

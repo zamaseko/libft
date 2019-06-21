@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:22:46 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/13 12:13:52 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/21 13:33:42 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,17 +24,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-/*#include <stdio.h>
-int main(void) 
-{
-	int a;
-	int b;
-
-	a = '~';
-	b = ft_isalnum(a);
-	printf("mine: %d\n", b);
-	b = isalnum(a);
-	printf("pc: %d\n", b);
-//	ft_putchar(b);
-	return (0);
-}*/
