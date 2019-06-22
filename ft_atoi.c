@@ -6,16 +6,18 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:19:57 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/21 13:31:52 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/22 13:45:04 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_spaces(char c)
+static unsigned int	ft_spaces(const char *c, unsigned int i)
 {
-	return (c == ' ' || c == '\t' || c == '\r' || 
-	c == '\f'|| c == '\n' || c == '\v');
+	while (c[i] == ' ' || c[i] == '\t' ||  c[i] == '\r' || 
+	c[i] == '\f'|| c[i] == '\n' || c[i] == '\v')
+		i++;
+	return (i);
 }
 
 int		ft_atoi(const char *str)
@@ -27,8 +29,7 @@ int		ft_atoi(const char *str)
 	i = 0;
 	change = 1;
 	res = 0;
-	while (ft_spaces(str[i]))
-		i++;
+	i = ft_spaces(str, i);
 	if (str[i] == '-')
 	{
 		change = -1;

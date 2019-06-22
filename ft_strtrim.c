@@ -6,13 +6,13 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:49:52 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/19 17:49:35 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/22 13:54:22 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_gap(char c)
+static char	ft_gap(char c)
 {
 	return (c == ' ' || c == '\n' || c == '\t');
 }
