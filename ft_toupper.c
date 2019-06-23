@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 15:46:44 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/05 17:22:55 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/23 13:30:30 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,3 @@ int	ft_toupper(int z)
 	else
 		return (z);
 }
-/*
-int main(void)
-{
-	int a;
-	int b;
-	
-	b = 'a';
-	a = ft_toupper(b);
-	ft_putchar(a);
-	ft_putchar('\n');
-	return (0);
-}*/

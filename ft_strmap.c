@@ -6,16 +6,16 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:40:54 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/21 18:47:54 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/23 13:12:35 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmap(char const *s, char (*f)(char))
+char		*ft_strmap(char const *s, char (*f)(char))
 {
-	int i;
-	char *gstr;
+	int		i;
+	char	*gstr;
 
 	if (!s || !f)
 		return (NULL);

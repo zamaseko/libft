@@ -6,25 +6,24 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:13:14 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/13 12:40:35 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/23 13:23:14 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char		*ft_strrchr(const char *s, int c)
 {
-	int i;
-	char look;
-	char *find;
+	int		i;
+	char	look;
+	char	*find;
 
 	i = ft_strlen(s);
 	look = (char)c;
 	find = (char *)s;
-	while (i > 0 &&  find[i] != look)
+	while (i > 0 && find[i] != look)
 		i--;
-		if  (find[i] == look)
-			return ((char *)find + i);
+	if (find[i] == look)
+		return ((char *)find + i);
 	return (NULL);
 }
-

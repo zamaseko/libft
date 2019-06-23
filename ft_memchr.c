@@ -6,17 +6,17 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:51:32 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/21 18:03:40 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/23 13:06:19 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+void		*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t i;
-	char *find;
-	char look;
+	size_t	i;
+	char	*find;
+	char	look;
 
 	i = 0;
 	find = (char *)s;

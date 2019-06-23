@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:49:52 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/22 13:54:22 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/23 13:25:30 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ static char	ft_gap(char c)
 	return (c == ' ' || c == '\n' || c == '\t');
 }
 
-char	*ft_strtrim(char const *s)
+char		*ft_strtrim(char const *s)
 {
-	size_t ws;
-	size_t bs;
-	char *ns;
+	size_t	ws;
+	size_t	bs;
+	char	*ns;
 
 	if (!s)
 		return (NULL);
@@ -33,7 +33,7 @@ char	*ft_strtrim(char const *s)
 		return ((char *)s + ws);
 	while (ft_gap(s[bs]))
 		bs--;
-	ns = ft_strsub(s, ws, bs - ws  + 1);
+	ns = ft_strsub(s, ws, bs - ws + 1);
 	if (!ns)
 		return (0);
 	return (ns);
