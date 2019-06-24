@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:49:52 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/23 13:25:30 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/24 18:47:12 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ char		*ft_strtrim(char const *s)
 	while (ft_gap(s[ws]))
 		ws++;
 	if (ws == bs + 1)
-		return ((char *)s + ws);
+		return (ft_strdup(""));
 	while (ft_gap(s[bs]))
 		bs--;
-	ns = ft_strsub(s, ws, bs - ws + 1);
+	ns = ft_strsub(s, ws, (bs - ws + 1));
 	if (!ns)
-		return (0);
+		return (NULL);
 	return (ns);
 }
