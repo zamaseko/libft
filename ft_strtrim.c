@@ -6,16 +6,11 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:49:52 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/24 18:47:12 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/25 16:18:12 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static char	ft_gap(char c)
-{
-	return (c == ' ' || c == '\n' || c == '\t');
-}
 
 char		*ft_strtrim(char const *s)
 {

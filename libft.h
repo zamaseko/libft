@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:47:28 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/23 15:37:19 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/25 16:54:21 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,4 +69,6 @@ char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+char	ft_gap(char c);
+int		ft_spaces(const char *c, unsigned int i);
 #endif
