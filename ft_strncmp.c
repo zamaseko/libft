@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:18:39 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/25 11:32:52 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/06/25 18:18:15 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 			return (-1);
 		i++;
 	}
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	if ((unsigned char)s1[i] - (unsigned char)s2[i] > 0)
+		return (1);
+	if ((unsigned char)s1[i] - (unsigned char)s2[i] < 0)
+		return (-1);
+	else
+		return (0);
 }
