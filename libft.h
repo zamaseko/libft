@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:47:28 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/26 15:22:20 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/07/31 15:33:01 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,3 +73,14 @@ char	ft_gap(char c);
 int		ft_spaces(const char *c, unsigned int i);
 int		ft_wc(const char *s, char c);
 #endif
+
+typedef struc	s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}					t_list;
+
+t_list
+void				*ft_lstnew(const void *content, size_t content_size)
+t_list

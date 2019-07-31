@@ -1,44 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   main2.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/28 08:38:32 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/06/28 10:49:30 by zamaseko         ###   ########.fr       */
+/*   Created: 2019/07/01 17:14:52 by zamaseko          #+#    #+#             */
+/*   Updated: 2019/07/04 09:27:55 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	upper(char c)
-{
-	return(ft_toupper(c));
-}
-
-void	ft_printer(char **w)
-{
-	int i;
-	int j;
-
-	i = 0;
-	j = 0;
-	while (w[i])
-		ft_putendl(ft_strmap(w[i++], &upper));
-}
-
-int		main(void)
+int main()
 {
 	char *a;
-	char **w;
+//	char b;
 
-	a = "   hello what is you name    ";
-	//whitespaces function
-	a = (ft_strtrim(a));
-	//split function using a
-	w = ft_strsplit(a, ' ');
-	//print w array using printer
-	ft_printer(w);
+	a = "FUCK YOU MEAN";
+//	b = ft_putstr(a);
+	ft_putendl(*ft_strsplit(a, ' '));
+	ft_putchar('\n');
 	return (0);
 }
