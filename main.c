@@ -6,7 +6,7 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/28 08:38:32 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/09/25 13:59:46 by zamaseko         ###   ########.fr       */
+/*   Updated: 2019/09/30 14:27:19 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	upper(char c)
 {
-	return(ft_toupper(c));
+	return (ft_toupper(c));
 }
 
 void	ft_printer(char **w)
