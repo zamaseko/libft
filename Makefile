@@ -41,10 +41,13 @@ $(NAME):
 	gcc $(FLAGS) $(SRCS) 
 	ar -rc $(NAME) $(OBJS)
 	ranlib $(NAME)
+	@echo "made library"
 clean:
 	rm -rf *.o
+	@echo "made clean"
 fclean: clean 
 	rm -rf  $(NAME)
+	"deleted lib"
 
 re: fclean all
 
