@@ -6,12 +6,13 @@
 /*   By: zamaseko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:47:28 by zamaseko          #+#    #+#             */
-/*   Updated: 2019/09/25 13:56:21 by zamaseko         ###   ########.fr       */
+/*   Updated: 2020/08/21 15:03:50 by zamaseko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+#define BUFF_SIZE 32
 # include <unistd.h>
 # include <string.h>
 # include <ctype.h>
@@ -72,4 +73,6 @@ int		ft_tolower(int c);
 char	ft_gap(char c);
 int		ft_spaces(const char *c, unsigned int i);
 int		ft_wc(const char *s, char c);
+int		ft_maxint(int num);
+int		get_next_line(const int fd, char **line);
 #endif
